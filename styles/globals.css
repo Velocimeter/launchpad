@@ -1,4 +1,5 @@
-@import "siebb.css";
+@import "orbitron.css";
+@import "ibm_plex_mono.css";
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +8,6 @@
 
 @layer base {
   html {
-    @apply text-primary font-siebRG;
+    @apply text-white font-plexMono;
   }
 }

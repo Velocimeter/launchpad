@@ -13,21 +13,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        siebB: ["SIEBB", ...defaultTheme.fontFamily.sans],
-        siebRG: ["SIEBRG", ...defaultTheme.fontFamily.sans],
+        orbitron: ["Orbitron", ...defaultTheme.fontFamily.sans],
+        plexMono: ["IBM Plex Mono", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: "#2ebe2b",
-        secondary: "#05955b",
+        primary: "#1fed88",
+        secondary: "#b6b6b6",
         accent: "#ffda58",
-        neutral: "#222222",
         extendedBlack: "#111",
         success: "#07bc0c",
-        warning: "#ffda58",
         error: "#ff4141",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(ellipse, var(--tw-gradient-stops))",
       },
       keyframes: {
         hide: {
