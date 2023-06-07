@@ -125,8 +125,8 @@ export function useTimer() {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTimeLeft((prev) => prev - MINUTE);
-    }, MINUTE);
+      setTimeLeft((prev) => prev - SECOND);
+    }, SECOND);
 
     return () => {
       clearInterval(intervalId);

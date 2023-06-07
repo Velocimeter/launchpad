@@ -123,7 +123,7 @@ export function Launchpad() {
 
   const { hasEnded, hasStarted, tokenPrice, maxRaise, minRaise } =
     useTimeAndPrice(saleTokenDecimals, projectTokenDecimals);
-  const { days, hours, minutes } = useTimer();
+  const { days, hours, minutes, seconds } = useTimer();
 
   const { config: approveConfig } = usePrepareErc20Approve({
     address: saleTokenAddress,
@@ -255,7 +255,7 @@ export function Launchpad() {
           </div>
           <div className="flex flex-col gap-1">
             <div className="text-secondary">Remaining time</div>
-            <div className="bg-gradient-to-r from-pulse-cyan to-pulse-pink bg-clip-text font-semibold text-transparent">{`${days}d ${hours}h ${minutes}m`}</div>
+            <div className="bg-gradient-to-r from-pulse-cyan to-pulse-pink bg-clip-text font-semibold text-transparent">{`${days}d ${hours}h ${minutes}m ${seconds}s`}</div>
           </div>
           <div className="flex flex-col gap-1">
             <div className="text-secondary">Price hike raise</div>
