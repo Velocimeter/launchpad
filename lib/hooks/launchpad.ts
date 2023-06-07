@@ -133,6 +133,14 @@ export function useTimer() {
     };
   }, [deadline]);
 
+  useEffect(() => {
+    if (deadline === 0) {
+      setTimeLeft(0);
+    } else {
+      setTimeLeft(deadline * 1000);
+    }
+  }, [deadline]);
+
   return timeLeft > 0
     ? {
         days: Math.floor(timeLeft / DAY),
